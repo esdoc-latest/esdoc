@@ -20,12 +20,12 @@ export default class VariableDoc extends AbstractDoc {
         this._value.name = this._node.declarations[0].id.name;
         break;
       case 'ObjectPattern':
-        // TODO: optimize for multi variables.
+        // @todo optimize for multi variables.
         // e.g. export const {a, b} = obj
         this._value.name = this._node.declarations[0].id.properties[0].key.name;
         break;
       case 'ArrayPattern':
-        // TODO: optimize for multi variables.
+        // @todo optimize for multi variables.
         // e.g. export cont [a, b] = arr
         this._value.name = this._node.declarations[0].id.elements.find(v => v).name;
         break;

@@ -20,7 +20,7 @@ export default class CommentParser {
 
     let comment = commentNode.value;
 
-    // TODO: refactor
+    // @todo refactor
     comment = comment.replace(/\r\n/gm, '\n'); // for windows
     comment = comment.replace(/^[\t ]*/gm, ''); // remove line head space
     comment = comment.replace(/^\*[\t ]?/, ''); // remove first '*'

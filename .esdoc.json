@@ -9,7 +9,7 @@
     {
       "name": "esdoc-standard-plugin",
       "option": {
-        "brand": {"title": "ESDoc", "logo": "./manual/asset/image/logo.png"},
+        "brand": {"title": "ESDocLatest", "logo": "./manual/asset/image/logo.png"},
         "test": {"source": "./test", "includes": ["\\.test\\.js$"]},
         "manual": {
           "index": "./README.md",
