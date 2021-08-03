@@ -1,7 +1,3 @@
-<!--![Owner Status](https://img.shields.io/badge/owner-busy-red.svg)-->
-[![Build Status](https://travis-ci.org/esdoc/esdoc.svg?branch=master)](https://travis-ci.org/esdoc/esdoc)
-[![Coverage Status](https://codecov.io/gh/esdoc/esdoc/branch/master/graph/badge.svg)](https://codecov.io/gh/esdoc/esdoc)
-[![Document](https://doc.esdoc.org/github.com/esdoc/esdoc/badge.svg?t=0)](https://doc.esdoc.org/github.com/esdoc/esdoc)
 
 # ESDoc-latest [WIP]
 
@@ -39,11 +35,11 @@ npm install --save-dev esdoc-latest esdoc-latest-standard-plugin
 echo '{
   "source": "./src",
   "destination": "./docs",
-  "plugins": [{"name": "esdoc-standard-plugin"}]
+  "plugins": [{"name": "esdoc-latest-standard-plugin"}]
 }' > .esdoc.json
 
 # Run ESDoc.
-./node_modules/.bin/esdoc
+./node_modules/.bin/esdoc-latest
 
 # View a documentation
 open ./docs/index.html
