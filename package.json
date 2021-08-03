@@ -1,6 +1,6 @@
 {
   "name": "esdoc-latest",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "Better Documentation Generator For JavaScript",
   "author": {
     "name": "Shubham Verma",
@@ -64,6 +64,6 @@
   ],
   "main": "out/src/ESDoc.js",
   "bin": {
-    "esdoc": "out/src/ESDocCLI.js"
+    "esdoc-latest": "out/src/ESDocCLI.js"
   }
 }
