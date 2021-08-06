@@ -505,13 +505,13 @@ export default class DocFactory {
 
   /**
    * decide Doc type from function expression node.
-   * babylon 6.11.2 judges`export default async function foo(){}` to be `FunctionExpression`.
-   * I expect `FunctionDeclaration`. this behavior may be bug of babylon.
+   * @babel/parser 6.11.2 judges`export default async function foo(){}` to be `FunctionExpression`.
+   * I expect `FunctionDeclaration`. this behavior may be bug of @babel/parser.
    * for now, workaround for it with this method.
    * @param {ASTNode} node - target node that is function expression node.
    * @returns {{type: string, node: ASTNode}} decided type.
    * @private
-   * @todo inspect with newer babylon.
+   * @todo inspect with newer @babel/parser.
    */
   _decideFunctionExpressionType(node) {
     if (!node.async) return {type: null, node: null};

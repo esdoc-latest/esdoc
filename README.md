@@ -1,9 +1,7 @@
-<!--![Owner Status](https://img.shields.io/badge/owner-busy-red.svg)-->
-[![Build Status](https://travis-ci.org/esdoc/esdoc.svg?branch=master)](https://travis-ci.org/esdoc/esdoc)
-[![Coverage Status](https://codecov.io/gh/esdoc/esdoc/branch/master/graph/badge.svg)](https://codecov.io/gh/esdoc/esdoc)
-[![Document](https://doc.esdoc.org/github.com/esdoc/esdoc/badge.svg?t=0)](https://doc.esdoc.org/github.com/esdoc/esdoc)
 
-# ESDoc
+# ESDoc-latest [WIP]
+
+This repo containt latest packages and some minor fixes for plugins. Can run latest code . PRs are welcome
 
 ESDoc is a documentation generator for JavaScript.<br/>
 Please <a href="https://try.esdoc.org">try it out</a>!
@@ -31,17 +29,17 @@ And [more](https://github.com/search?o=desc&q=esdoc+filename%3Apackage.json+-use
 cd your-project/
 
 # Install ESDoc and standard plugin.
-npm install --save-dev esdoc esdoc-standard-plugin
+npm install --save-dev esdoc-latest esdoc-latest-standard-plugin
 
 # Create a configuration file.
 echo '{
   "source": "./src",
   "destination": "./docs",
-  "plugins": [{"name": "esdoc-standard-plugin"}]
+  "plugins": [{"name": "esdoc-latest-standard-plugin"}]
 }' > .esdoc.json
 
 # Run ESDoc.
-./node_modules/.bin/esdoc
+./node_modules/.bin/esdoc-latest
 
 # View a documentation
 open ./docs/index.html
@@ -53,5 +51,3 @@ please visit [esdoc.org](https://esdoc.org) to see more documentation.
 # License
 MIT
 
-# Author
-[Ryo Maruyama@h13i32maru](https://twitter.com/h13i32maru)
